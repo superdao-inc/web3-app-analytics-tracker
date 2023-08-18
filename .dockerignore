@@ -1,0 +1,8 @@
+**/.turbo
+**/coverage
+**/dist
+**/node_modules
+.helm
+README.md
+compose.yml
+deploy.env

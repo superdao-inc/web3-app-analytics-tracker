@@ -1,0 +1,8 @@
+{
+  "extends": "@dev/tsconfig/node.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strictPropertyInitialization": false
+  },
+  "include": ["src", "test", "scripts", "migrations"]
+}

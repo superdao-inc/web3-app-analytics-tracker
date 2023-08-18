@@ -1,0 +1,25 @@
+{
+	"name": "@sd/tracker",
+	"private": false,
+	"version": "1.1.0",
+	"description": "Superdao Tracker",
+	"main": "index.ts",
+	"browser": "browser/tracker.js",
+	"types": "index.ts",
+	"type": "module",
+	"scripts": {
+		"build": "vite build && vite build -c vite.config.browser.ts && tsc -p tsconfig.build.json && esbuild preload-script.js --outdir=browser --minify",
+		"lint": "pnpm typecheck && pnpm eslint",
+		"typecheck": "tsc --noEmit",
+		"eslint": "eslint . --config .eslintrc.cjs"
+	},
+	"devDependencies": {
+		"@analytics/session-utils": "0.1.17",
+		"@types/dlv": "1.1.2",
+		"analytics": "0.8.1",
+		"esbuild": "0.17.14",
+		"eslint": "8.36.0",
+		"vite": "4.2.1",
+    "typescript": "4.9.5"
+	}
+}
